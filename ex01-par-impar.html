@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,16 +13,18 @@
     ou ímpar e informe ao usuário usando alert().
     */
 
-    let num = Number(prompt('Informe um número'))
+    let num = parseInt(prompt('Informe um número:'))
    
     
-    
-        if (num % 2 == 0) {
-            alert('Esse numero é par')
+        if (isNaN(num)) {
+            alert('ERROR: o valor informado não é um número inteiro')
+
         }
-    
+        else if (num % 2 == 0) {
+            alert('Esse numero (' + num + ') é par')
+        }
         else {
-            alert('Esse numero é impar')
+            alert('Esse numero (' + num + ') é impar')
         }
 
 
