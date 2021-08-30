@@ -33,9 +33,10 @@
         */
 
         let letra
+        let num
 
         do {
-            let num = parseInt(prompt('Digite um número de 0 a 9: '))
+            num = parseInt(prompt('Digite um número de 0 a 9: '))
             
 
         } while (isNaN(num) || (num < 0 || num > 9))
@@ -43,45 +44,38 @@
         switch (num) {
             case 0 :
                 letra = 'A'
-                document.write(letra)
+                break
             case 1 :
                 letra = 'B'
-                document.write(letra)
                 break
             case 2 :
                 letra = 'C'
-                document.write(letra)
                 break
             case 3 :
                 letra = 'D'
-                document.write(letra)
                 break
             case 4 :
                 letra = 'E'
-                document.write(letra)
                 break
             case 5 :
                 letra = 'F'
-                document.write(letra)
                 break
             case 6 :
                 letra = 'G'
-                document.write(letra)
                 break
             case 7 :
                 letra = 'H'
-                document.write(letra)
                 break
             case 8 :
                 letra = 'I'
-                document.write(letra)
                 break
             case 9 :
-                letra = 'J'
-                document.write(letra)
+                letra = 'J' 
                 break
         }
 
+        
+        alert(letra)
         
 
     </script>
