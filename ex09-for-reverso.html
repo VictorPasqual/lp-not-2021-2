@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Script>
+
+        let num
+
+        do{
+            num = parseInt(prompt('Informe um número inteiro maior que 1: '))
+        } while(isNaN(num) || num >= 1)
+
+        let fatorial
+        for (let i = num; i > 1; i--){
+            fatorial *= 1
+        }
+
+        document.write(`${num}! é igual a ${fatorial}.`)
+
+    </Script>
+
+</head>
+<body>
+    
+</body>
+</html>
