@@ -21,6 +21,7 @@
 
         /**********************************************************/
 
+        // Calculando o fatorial de 8
         num = 8
         fatorial = 1
         for (let i = num; i > 1; i--){
@@ -30,6 +31,35 @@
         document.write(`${num}! é igual a ${fatorial}.<br>`)
 
 
+        /**********************************************************
+            Principio DRY = DOnt´t repeat yourself ( não se repita)
+        */
+
+        // DECLARAÇÃO DE FUNÇÃO
+        // calcFatorial -> Nome da função
+        // num -> parâmetro ou argumento (dado de entrada)
+        function calcFatorial(num){
+            let resultado = 1
+            for(let i = num; i > 1; i--) {
+                resultado *= i
+            }
+            return resultado        // dado de saída
+        }
+
+
+        // CHAMADA À função
+        // A variável fat4 receberá o resultado da função
+        // enviado pelo return
+        let fat4 = calcFatorial(4)
+
+        document.write(`4! é igual a ${fat4}. <br>`)
+
+        // CHAMADA À FAUNÇÃO sem atribuição a variável
+        document.write(`6! é igual a ${calcFatorial(6)}`)
+
+
+        // Chamada a uma função da bibliorteca do JS
+        document.write(`A raiz qadrada de 3 é ${Math.sqrt(3)}. <br>`)
 
     </script>
 </head>

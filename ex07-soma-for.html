@@ -16,21 +16,44 @@
     informados forem 20 e 25, você somará 20 + 21 + 22 + 23 + 24 + 25.
     */
 
-    let num1
-    let num2
+    let num1, num2, maior, menor, soma = 0
 
     do {
         num1 = parseInt(prompt('nformar dois números inteiros diferentes , 1° Número: '))
-        num2 = parseInt(prompt('nformar dois números inteiros diferentes , 2° Número: '))
 
-    }while(isNaN(num) || num1 == num2)
+    }while(isNaN(num1))
 
-    for(let i; num1 < num2; i++) {
-        
-        i = num1
-        document.write(i)
+    do {
+        num1 = parseInt(prompt('nformar dois números inteiros diferentes , 2° Número: '))
 
+    }while(isNaN(num2) || num2 == num1)
+
+
+
+
+    // Determinando qual do numero é o maior e o menor
+
+    if(num1 > num2) {
+        maior = num1
+        menor = num2
     }
+    else {
+        maior = num2
+        menor = num1
+    }
+
+    document.write('NÚMEROS SOMADOS:<br>')
+
+    // Calculando a soma
+
+    for(let i = menor; i <= maior; i++) {
+        document.write(i + '<br>')
+        soma += i
+    }
+
+
+    alert(`A Soma dos números entre ${maior} e ${menor} é ${soma}.`)
+
 
     </script>
 </head>
