@@ -4,7 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Funções 2</title>
+    <script>
+
+
+        // Declaração de função que calcula a área de uma forma geométrica
+        // a partir das medias da base e da altura da forma
+        // clacArea -> nome da função
+        // base, altura, tipo -> parâmetros ou argumentos (dados de entrada)
+        function clacArea(base, altura, tipo){
+            let clacArea
+
+            switch(tipo){
+                case 'R':   // Retângulo
+                    area = base * altura
+                    break
+
+                case 'T':   // Triângulo
+                    area = base * altura / 2
+                    break
+
+                case 'E':   // Eclipse
+                    area = (base/ 2)  *  (altura / 2) * math.PI
+                    break
+                
+                default: 
+                area = null
+        
+            }
+
+            return area
+
+        }
+
+
+        documenta.write(`Retângulo de 10x15: ${calcArea(10, 15, 'R')}<br>`)
+
+
+        let y = 20; x = 12; t = 'T'
+        documenta.write(`Triangângulo de 12x20: ${calcArea(x, y, t)}<br>`)
+
+    </script>
 </head>
 <body>
     
