@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora DOM</title>
+    <style>
+
+        body{
+            font-family:cursive;    
+            text-align: center;
+            background-color: rgb(102, 255, 0);
+        }
+        
+
+    </style>
+    
+</head>
+<body>
+    <h1>Calculadora DOM</h1>
+
+    <div>
+        <label for="primeiro-numero">Primeiro número: </label>
+        <input type="number" id="primeiro-numero" min="0" max="999999">
+    </div>
+
+    <div>
+        <label for="operacao">Operação</label>
+        <select id="operacao">
+            <option>(Escolha)</option>
+            <option>Soma(+)</option>
+            <option>Subtração(-)</option>
+            <option>Multiplicação(*)</option>
+            <option>Divisão(/)</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="segundo-numero">Segundo número: </label>
+        <input type="number" id="segundo-numero" min="0" max="999999">
+    </div>
+
+    <div>
+        <button id="Calculo">Calcular</button>
+    </div>
+   
+
+    <script>
+
+        
+        const PrimeiroNum = document.querySelector('#primeiro-nome')  
+        const SegundoNum = document.querySelector
+        ('#segundo-nome')
+        const Oper = document.querySelector('#operacao')
+        const calc = document.querySelector("#Calculo")
+
+        let num1, num2
+
+        function validar(){
+
+            if (isNaN(PrimeiroNum) || isNaN(SegundoNum)) {
+                alert("Insira um número!")
+                PrimeiroNum.focus()
+                SegundoNum.focus()
+                return false
+            }
+            
+            // Primeiro Número
+            if(PrimeiroNum == '') {
+                alert('O primeiro número precisa ser preenchido')
+                PrimeiroNum.focus()
+                return false
+            }
+
+
+            // Segundo Número
+            if(SegundoNum == '') {
+                alert('O segundo número precisa ser preenchido')
+                SegundoNum.focus()
+                return false
+            }
+
+            return true
+
+        }
+        
+            
+        let resultado
+
+        function calculacao(){
+
+                 num1 = Number(PrimeiroNum.value)
+                 num2 = Number(SegundoNum.value)
+                
+
+                    switch(Oper.selectedIndex){
+
+                        case 1:
+                            resultado = num1 + num2
+                            alert(`O resultado da soma de ${num1} e ${num2} é: ${resultado} `)
+                        break;
+                        case 2:
+                            resultado = num1 - num2
+                            alert(`O resultado da subtração de  ${num1} e ${num2} é: ${resultado} `)
+                        break;
+                        case 3:
+                            resultado = num1 * num2
+                            alert(`O resultado da multiplicação de ${num1} e ${num2} é: ${resultado} `)
+                        break;
+                        case 4:
+                            resultado = num1 / num2
+                            alert(`O resultado da divisão de  ${num1} e ${num2} é: ${resultado} `)
+                        break;
+
+
+                    }
+
+
+            }
+            calc.addEventListener(' click ', calculacao)
+
+
+
+    </script>
+
+
+</body>
+</html>
