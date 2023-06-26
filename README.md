@@ -34,4 +34,4 @@ Para mais informações sobre o curso de ADS da FATEC, visite o site da institui
 
 Se você tiver alguma dúvida ou sugestão relacionada a este repositório, sinta-se à vontade para entrar em contato com os responsáveis pelo curso.
 
-Esperamos que este repositório seja útil no aprendizado e prática da linguagem de programação! Bom estudo
+Esperamos que este repositório seja útil no aprendizado e prática da linguagem de programação! Bons estudos!!
