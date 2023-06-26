@@ -1,4 +1,4 @@
-Códigos de Linguagem de Programação do Curso de ADS da FATEC
+## Códigos de Linguagem de Programação do Curso de ADS da FATEC
 
 Este repositório contém vários códigos desenvolvidos durante as aulas de Linguagem de Programação do curso de Análise e Desenvolvimento de Sistemas (ADS) da FATEC.
 Sobre o Curso
@@ -8,7 +8,7 @@ Conteúdo do Repositório
 
 Este repositório é organizado em pastas que correspondem a diferentes tópicos e conceitos abordados nas aulas de Linguagem de Programação. Cada pasta contém os códigos desenvolvidos durante as aulas, bem como exemplos e exercícios propostos.
 
-Os principais tópicos abordados no repositório incluem:
+# Os principais tópicos abordados no repositório incluem:
 
     Estruturas de controle: códigos que demonstram o uso de estruturas condicionais (if-else, switch) e estruturas de repetição (for, while, do-while).
 
@@ -20,7 +20,7 @@ Os principais tópicos abordados no repositório incluem:
 
     Exemplos práticos: códigos que demonstram a aplicação dos conceitos aprendidos em situações reais, como cálculos matemáticos, processamento de dados, entre outros.
 
-Utilização dos Códigos
+# Utilização dos Códigos
 
 Os códigos disponibilizados neste repositório podem ser utilizados como material de estudo e referência para os estudantes do curso de ADS da FATEC, bem como para qualquer pessoa interessada em aprender ou aprimorar seus conhecimentos em programação.
 
